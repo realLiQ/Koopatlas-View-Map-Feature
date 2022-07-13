@@ -1290,6 +1290,7 @@ void NewerMapDrawFunc() {
 bool dWMBorderData::load(const char* path)
 {
 	void* temp = fileLoader.load(path);
+	fileLoader.unload();
 	if (temp) {
 		this->data = (dWMBorderFile_s*)temp;
 		return true;
