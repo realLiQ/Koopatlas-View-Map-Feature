@@ -9,7 +9,7 @@ just like in Nintendo's original maps.
 
 v5
 - Border coordinates get loaded from an external file now
-- Added Map-Border-Editor for creating this file
+- Added Map-Border-Editor for creating those files
 
 v4
 - Added animation when going back to Mario
