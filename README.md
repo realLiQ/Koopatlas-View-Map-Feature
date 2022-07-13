@@ -33,3 +33,6 @@ v1
 
 Check out the tutorial on my website:
 https://nikolasthurm.de/viewmapfeature.html
+
+### Special Thanks
+L-Dev - For making the logo of the editor!
