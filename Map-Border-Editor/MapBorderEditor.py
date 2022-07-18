@@ -136,16 +136,20 @@ class MainForm(QtWidgets.QMainWindow):
         file = menub.addMenu("File")
 
         newfile = file.addAction("New")
+        newfile.setShortcut("Ctrl+N")
         newfile.triggered.connect(self.newFile)
 
         openFile = file.addAction("Open File...")
+        openFile.setShortcut("Ctrl+O")
         openFile.triggered.connect(self.openFile)
 
         self.saveFileB = file.addAction("Save File")
+        self.saveFileB.setShortcut("Ctrl+S")
         self.saveFileB.triggered.connect(self.saveFile)
         self.saveFileB.setEnabled(False)
 
         saveFileAs = file.addAction("Save File As...")
+        saveFileAs.setShortcut("Ctrl+Shift+S")
         saveFileAs.triggered.connect(self.saveFileAs)
 
         # Help Menu
