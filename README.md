@@ -1,11 +1,15 @@
 # View Map Feature for Koopatlas Maps
-## Version 5
+## Version 6
 With this code you can scroll over the map in the game, 
 just like in Nintendo's original maps.
 
 **If you use this code in your Mod/Hack, please give credit to me.**
 
 ### Changelog
+
+v6
+- Made the code 100% dynamic
+- No code modifications needed anymore
 
 v5
 - Border coordinates get loaded from an external file now

@@ -529,13 +529,24 @@ void dScKoopatlas_c::executeState_Normal() {
 
 	if (!coordinatesSet)
 	{
+		SaveBlock *save = GetSaveFile()->GetBlock(-1);
+		int size = 0;
+		size = borderData.data->numOfWorlds;
+		float* left = new float[size];
+		float* right = new float[size];
+		float* top = new float[size];
+		float* bottom = new float[size];
 		for (int i = 0; i < borderData.data->numOfWorlds; i++)
 		{
-			WMBorder.xLeft[i] = borderData.data->world[i].xLeft;
-			WMBorder.xRight[i] = borderData.data->world[i].xRight;
-			WMBorder.yTop[i] = -borderData.data->world[i].yTop;
-			WMBorder.yBottom[i] = -borderData.data->world[i].yBottom;
+			left[i] = borderData.data->world[i].xLeft;
+			right[i] = borderData.data->world[i].xRight;
+			top[i] = -borderData.data->world[i].yTop;
+			bottom[i] = -borderData.data->world[i].yBottom;
 		}
+		WMBorder.xLeft = left;
+		WMBorder.xRight = right;
+		WMBorder.yTop = top;
+		WMBorder.yBottom = bottom;
 	}
 
 	if (pathManager.completionMessagePending) {

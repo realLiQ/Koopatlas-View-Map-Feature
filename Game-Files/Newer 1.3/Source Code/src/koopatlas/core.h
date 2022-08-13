@@ -169,7 +169,7 @@ class dScKoopatlas_c : public dScene_c {
 		bool WMViewerVisible;
 		struct WMViewerBorder
 		{
-			float xLeft[2], xRight[2], yTop[2], yBottom[2]; //Array -> number of maps
+			float *xLeft, *xRight, *yTop, *yBottom;
 		};
 		WMViewerBorder WMBorder;
 		bool sfxShouldPlay;
