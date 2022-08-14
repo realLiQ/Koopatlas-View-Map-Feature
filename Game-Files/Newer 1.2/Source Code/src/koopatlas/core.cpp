@@ -552,6 +552,8 @@ void dScKoopatlas_c::executeState_Normal() {
 		delete[] right;
 		delete[] top;
 		delete[] bottom;
+
+		coordinatesSet = true;
 	}
 
 	if (pathManager.completionMessagePending) {
