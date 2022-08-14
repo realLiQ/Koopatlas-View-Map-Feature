@@ -547,6 +547,11 @@ void dScKoopatlas_c::executeState_Normal() {
 		WMBorder.xRight = right;
 		WMBorder.yTop = top;
 		WMBorder.yBottom = bottom;
+
+		delete[] left;
+		delete[] right;
+		delete[] top;
+		delete[] bottom;
 	}
 
 	if (pathManager.completionMessagePending) {
