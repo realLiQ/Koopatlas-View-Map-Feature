@@ -33,11 +33,6 @@ v2
 v1
 - Initial Release
 
-## How to install
-
-Check out the tutorial on my website:
-https://nikolasthurm.de/viewmapfeature.html
-
 ## Special Thanks
 
 L-Dev - For making the logo of the editor!
